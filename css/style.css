@@ -386,18 +386,20 @@ display: flex;
   
 }
 
+.work-article {
+ position: absolute;
+ width: 100%;
+ bottom: 27px;
+}
+
 .work-text {
-  position: absolute;
-  width: 212px;
-  bottom: 20px;
-  left: 50%;
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  transform: translate(-50%, -50%);
   color: #FFFFFF;
 }
 
@@ -772,7 +774,7 @@ border-color: var(--accent-color);
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
 
   transition-property: transform;
   transition-duration: 250ms;
@@ -804,7 +806,7 @@ border-color: var(--accent-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.proposal-action:hover .action-text {
+.proposal-link:hover .action-text {
   opacity: 1;
 }
 
@@ -841,6 +843,7 @@ border-color: var(--accent-color);
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
+
 .proposal-text {
   color: var(--primary-text-color);
   font-style: normal;
